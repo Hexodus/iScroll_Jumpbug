@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+		<title>iScroll Jumpbug Demo</title>
+	        <link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css"/>
+	        <link rel="stylesheet" href="css/jquery.mobile.iscrollview.css" />
+			<script src="js/jquery-1.8.2.min.js"></script>
+	        <script src="js/jquery.mobile-1.2.0.min.js"></script>
+	        <script src="js/iscroll.js"></script>
+	        <script src="js/jquery.mobile.iscrollview.js"></script>
+		
+    </head>
+
+    <body>
+        <!-- Home -->
+        <div data-role="page" data-theme="b" id="main">
+            <div data-role="header" data-id="persist" data-theme="b"  data-position="fixed">
+				<h3>
+                    iScroll Jumpbug Test
+                </h3>
+            </div>
+
+			<div data-role="content" data-iscroll="{"hScroll":false, "vScroll": true, "vScrollbar":false, "bounce":false, "snap": false, "momentum":false}" style="padding: 2,5%">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-theme="b">
+                        <a href="#" data-transition="slidefade">
+                            Vorwort
+                        </a>
+                    </li>
+                </ul>
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+	
+
+		<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+		<ul data-role="listview" data-divider-theme="b" data-inset="true">
+			<li data-theme="b"><a href="#" data-transition="slidefade">Testelement1</a></li>
+			<li data-theme="b"><a href="#" data-transition="slidefade">Testelement2</a></li>
+			<li data-theme="b"><a href="#" data-transition="slidefade">Testelement3</a></li>
+		</ul>
+		<div style="width:100%; height: 3em;"> </div>
+		<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+		<p> 
+		This demo shows a bug that occures using JQM 1.2 and iScroll 4 with iScrollview on Android 2.x Devices. 
+When you drag the page a little down and then use the second swipe trigger, the page jumps to the bottom 
+over the border and "stucks" there - it's not more possible to scroll to the top. Looks a like the scrollable area redefines itself.  
+		</p>
+
+	<!-- Test Form -->
+
+	<form>
+	    <div data-role="fieldcontain">
+	        <fieldset data-role="controlgroup">
+	            <label for="form_text">
+	                Some Label
+	            </label>
+	            <textarea name="form_textarea" id="form_text" placeholder="Some fill element">
+	            </textarea>
+	        </fieldset>
+	    </div>
+	    <div data-role="fieldcontain">
+	        <fieldset data-role="controlgroup">
+	            <label for="toggleswitch1">
+	                Switch me #1
+	            </label>
+	            <select name="form_mailinglist" id="toggleswitch1" data-theme="" data-role="slider">
+	                <option value="0">
+	                    no
+	                </option>
+	                <option value="1">
+	                    yes
+	                </option>
+	            </select>
+	        </fieldset>
+	    </div>
+	                        <div data-role="fieldcontain">
+	        <fieldset data-role="controlgroup">
+	            <label for="toggleswitch2">
+	                Switch me #2
+	            </label>
+	            <select name="form_mailinglist2" id="toggleswitch2" data-theme="" data-role="slider">
+	                <option value="0">
+	                    no
+	                </option>
+	                <option value="1">
+	                    yes
+	                </option>
+	            </select>
+	        </fieldset>
+	    </div>
+
+	</form>
+
+	<!-- Linebreaks meant to make the scrollable area longer for testing purposes -->
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<div> Wellcome to the bottom dude!</div>
+
+</div> <!-- End of the content -->
+
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+
+			
+		<div data-role="footer" data-id="persist" data-iconpos="top" data-position="fixed" data-theme="b">
+			<div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" data-theme="" data-icon="star"> Test </a>
+                    </li>
+                    <li>
+						<a href="#" data-theme="" data-icon="info"> Test2 </a>
+                    </li>
+                </ul>
+            </div>
+		</div>
+			
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+		
+    </div> <!-- End of the page -->
+		
+	</body>
+</html>
